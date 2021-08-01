@@ -5,6 +5,7 @@ class ProductModel {
   int id;
   String name;
   String location;
+  String description;
   double price;
   int categoryId;
   Category category;
@@ -15,6 +16,7 @@ class ProductModel {
     this.id,
     this.name,
     this.location,
+    this.description,
     this.price,
     this.currency,
     this.image,

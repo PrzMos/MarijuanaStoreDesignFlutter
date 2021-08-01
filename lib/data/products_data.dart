@@ -6,6 +6,7 @@ class ProductsData {
         id: 1,
         name: "Thunderfuck Strain",
         location: "Alaskan",
+        description: "Lorum eps",
         image:
             "https://images.leafly.com/flower-images/defaults/generic/strain-11.png?auto=compress,format&h=350&w=748&dpr=1",
         price: 300,
@@ -14,6 +15,7 @@ class ProductsData {
         id: 2,
         name: "Organic CBD",
         location: "Indica",
+        description: "Lorum eps",
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2F89X6kj6CQFyFoxwkDAFO_Suver-Haze-Hemp-Flower.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=332f245517b146dc4dabcb2d17a6c84e",
         price: 25,
@@ -22,6 +24,7 @@ class ProductsData {
         id: 3,
         name: "Grapefruit Durban",
         location: "Colorado",
+        description: "Lorum eps",
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FYz5iPPazSGjXmz25JBbD_Grapefruit+Durban.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=61eb1a490190695e086068c5c1c44603",
         price: 150,
@@ -30,6 +33,7 @@ class ProductsData {
         id: 4,
         name: "Zkittlez (CBD)",
         location: "Indica",
+        description: "Lorum eps",
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FqXhFDOjTCS73KFEGZgrA_IMG_5907.JPG?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=103cb9323fc0d2b27c905e8761967f3d",
         price: 200,
@@ -38,6 +42,7 @@ class ProductsData {
         id: 5,
         name: "TrainWreck seeds",
         location: "California",
+        description: "Lorum eps",
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FdfOUmqA8QNm3MWNr30kh_trainwreck-marijuana-seeds_large.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=f93cd248bfb856bebc8281f613b01401",
         price: 29.99,
@@ -46,6 +51,7 @@ class ProductsData {
         id: 6,
         name: "White Widow seeds",
         location: "Hybrid",
+        description: "Lorum eps",
         price: 29.99,
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2F4HtKWqNSSZOwjqFwGR09_WW+Leafly.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=29a8cb6efc33561581e72eee28209557",
@@ -54,6 +60,7 @@ class ProductsData {
         id: 7,
         name: "Blueberry OG seeds",
         location: "Hybrid",
+        description: "Lorum eps",
         price: 29.99,
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FkjlNJ6rGQ2aCK9htU6h0_BBOG+Leafly.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=03f3515a5ddb3b10f81b24113f1f8b8d",
@@ -62,6 +69,7 @@ class ProductsData {
         id: 8,
         name: "Sherbet Cookies",
         location: "Hybrid",
+        description: "Lorum eps",
         price: 89.00,
         image:
             "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fproducts%2Fphotos%2FZIbRt61RXqFIMxVx8afB_Sherbet+Cookies_WebPic.jpg?ixlib=rails-4.0.0&w=490&h=490&fit=crop&bg=FFFFFF&fm=jpg&q=80&s=c21c67e5a57b6af57c393aaacd00e3b5",

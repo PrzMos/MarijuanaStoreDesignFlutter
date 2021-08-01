@@ -5,6 +5,10 @@ import 'package:marijuana_store_design_app/data/catergory_data.dart';
 import 'package:marijuana_store_design_app/data/products_data.dart';
 import 'package:marijuana_store_design_app/models/category_model.dart';
 import 'package:marijuana_store_design_app/models/product_model.dart';
+import 'package:marijuana_store_design_app/pages/app_drawer.dart';
+import 'package:marijuana_store_design_app/painters/badge_painter.dart';
+import 'package:marijuana_store_design_app/painters/basket_icon_painter.dart';
+import 'package:marijuana_store_design_app/painters/shopping_card_painter.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -41,6 +45,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
+      endDrawer: AppDrawer(),
       body: Container(
         child: Column(
           children: [
@@ -95,7 +100,7 @@ class _HomePageState extends State<HomePage> {
             Flexible(
               flex: 8,
               child: ListView.builder(
-                  padding: EdgeInsets.only(left: 20.0),
+                  padding: EdgeInsets.only(left: 20.0, bottom: 100.0),
                   scrollDirection: Axis.horizontal,
                   itemCount: productList?.length,
                   itemBuilder: (context, int index) {
@@ -121,28 +126,29 @@ class _HomePageState extends State<HomePage> {
                         fontColor: fontColor);
                   }),
             ),
-            //Offset Button
-            Flexible(
-                flex: 2,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(8.0),
-                      width: 80,
-                      height: 80,
-                      decoration: BoxDecoration(
-                          color: Colors.teal.shade800,
-                          borderRadius: BorderRadius.circular(100.0)),
-                      child: Icon(
-                        Icons.leave_bags_at_home,
-                        color: Colors.white60,
-                        size: 50,
-                      ),
-                    ),
-                  ],
-                )),
           ],
+        ),
+      ),
+      floatingActionButton: Container(
+        margin: EdgeInsets.all(8.0),
+        width: 80,
+        height: 80,
+        decoration: BoxDecoration(
+            color: Colors.teal.shade800,
+            borderRadius: BorderRadius.circular(100.0)),
+        child: Center(
+          child: Stack(
+            children: [
+              CustomPaint(
+                painter:
+                    ShoppingCardPainter(color: Colors.white.withOpacity(0.8)),
+                size: Size(16, 16),
+              ),
+              CustomPaint(
+                painter: BadgePainter(Offset(16, 16), 12, "2"),
+              ),
+            ],
+          ),
         ),
       ),
     );
